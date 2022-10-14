@@ -1,58 +1,78 @@
-2022-10-09 20:53:57,433 - INFO - googleapiclient.discovery_cache - file_cache is only supported with oauth2client<4.0.0
-2022-10-09 20:53:57,671 - ERROR - root - database names cannot contain the character ' '
-2022-10-09 20:53:57,701 - WARNING - werkzeug -  * Debugger is active!
-2022-10-09 20:53:57,705 - INFO - werkzeug -  * Debugger PIN: 105-262-403
-2022-10-09 20:53:57,775 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-09 20:53:57,775 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-09 20:53:57,775 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-09 20:53:57,781 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
-2022-10-09 20:53:57,781 - INFO - werkzeug -  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
-2022-10-09 20:53:57,786 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-09 20:53:57,786 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-09 20:53:57,786 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-09 20:53:57,787 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-09 20:53:57,788 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-09 20:53:57,788 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
-2022-10-09 20:53:57,788 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-09 20:53:57,791 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
-2022-10-09 20:53:57,936 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
-2022-10-09 20:53:57,938 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
-2022-10-09 20:53:57,938 - DEBUG - pymongo.ocsp_support - Verifying response
-2022-10-09 20:53:57,938 - DEBUG - pymongo.ocsp_support - Responder is issuer
-2022-10-09 20:53:57,943 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
-2022-10-09 20:53:57,943 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-09 20:53:58,130 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
-2022-10-09 20:53:58,132 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
-2022-10-09 20:53:58,132 - DEBUG - pymongo.ocsp_support - Verifying response
-2022-10-09 20:53:58,132 - DEBUG - pymongo.ocsp_support - Responder is issuer
-2022-10-09 20:53:58,133 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
-2022-10-09 20:53:58,133 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-09 20:53:58,159 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
-2022-10-09 20:53:58,160 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
-2022-10-09 20:53:58,160 - DEBUG - pymongo.ocsp_support - Verifying response
-2022-10-09 20:53:58,161 - DEBUG - pymongo.ocsp_support - Responder is issuer
-2022-10-09 20:53:58,161 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
-2022-10-09 20:53:58,162 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-09 20:53:58,356 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-09 20:53:58,358 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-09 20:53:58,358 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-09 20:53:58,359 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
-2022-10-09 20:53:58,359 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-09 20:53:58,392 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-09 20:53:58,393 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-09 20:53:58,393 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-09 20:53:58,393 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
-2022-10-09 20:53:58,393 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-09 20:53:58,518 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-09 20:53:58,519 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-09 20:53:58,519 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-09 20:53:58,519 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
-2022-10-09 20:53:58,519 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-09 20:54:00,350 - INFO - werkzeug - 127.0.0.1 - - [09/Oct/2022 20:54:00] "GET / HTTP/1.1" 200 -
-2022-10-09 20:54:00,377 - INFO - werkzeug - 127.0.0.1 - - [09/Oct/2022 20:54:00] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
-2022-10-09 20:54:00,594 - ERROR - root - 'Collection' object is not callable. If you meant to call the 'find' method on a 'Database' object it is failing because no such method exists.
-2022-10-09 20:54:00,598 - INFO - werkzeug - 127.0.0.1 - - [09/Oct/2022 20:54:00] "GET /favicon.ico HTTP/1.1" 200 -
-2022-10-09 20:54:03,368 - INFO - werkzeug - 127.0.0.1 - - [09/Oct/2022 20:54:03] "GET / HTTP/1.1" 200 -
-2022-10-09 20:54:03,399 - INFO - werkzeug - 127.0.0.1 - - [09/Oct/2022 20:54:03] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
-2022-10-09 20:54:03,616 - ERROR - root - 'Collection' object is not callable. If you meant to call the 'find' method on a 'Database' object it is failing because no such method exists.
-2022-10-09 20:54:03,617 - INFO - werkzeug - 127.0.0.1 - - [09/Oct/2022 20:54:03] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-14 23:38:20,915 - INFO - googleapiclient.discovery_cache - file_cache is only supported with oauth2client<4.0.0
+2022-10-14 23:38:21,005 - WARNING - werkzeug -  * Debugger is active!
+2022-10-14 23:38:21,005 - INFO - werkzeug -  * Debugger PIN: 524-457-290
+2022-10-14 23:38:21,078 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-14 23:38:21,078 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-14 23:38:21,078 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-14 23:38:21,078 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-14 23:38:21,078 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-14 23:38:21,078 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-14 23:38:21,078 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-14 23:38:21,078 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-14 23:38:21,078 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-14 23:38:21,086 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
+2022-10-14 23:38:21,086 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
+2022-10-14 23:38:21,086 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
+2022-10-14 23:38:21,086 - INFO - werkzeug -  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+2022-10-14 23:38:21,102 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2022-10-14 23:38:21,106 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2022-10-14 23:38:21,106 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2022-10-14 23:38:21,106 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2022-10-14 23:38:21,106 - DEBUG - pymongo.ocsp_support - Verifying response
+2022-10-14 23:38:21,106 - DEBUG - pymongo.ocsp_support - Verifying response
+2022-10-14 23:38:21,106 - DEBUG - pymongo.ocsp_support - Responder is issuer
+2022-10-14 23:38:21,110 - DEBUG - pymongo.ocsp_support - Responder is issuer
+2022-10-14 23:38:21,118 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
+2022-10-14 23:38:21,118 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
+2022-10-14 23:38:21,118 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-14 23:38:21,118 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-14 23:38:21,127 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2022-10-14 23:38:21,127 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2022-10-14 23:38:21,127 - DEBUG - pymongo.ocsp_support - Verifying response
+2022-10-14 23:38:21,127 - DEBUG - pymongo.ocsp_support - Responder is issuer
+2022-10-14 23:38:21,127 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
+2022-10-14 23:38:21,127 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-14 23:38:21,270 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-14 23:38:21,274 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
+2022-10-14 23:38:21,274 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-14 23:38:21,274 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
+2022-10-14 23:38:21,274 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-14 23:38:32,001 - INFO - werkzeug - 127.0.0.1 - - [14/Oct/2022 23:38:32] "GET / HTTP/1.1" 200 -
+2022-10-14 23:38:32,049 - INFO - werkzeug - 127.0.0.1 - - [14/Oct/2022 23:38:32] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+2022-10-14 23:38:32,511 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-14 23:38:32,511 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-14 23:38:32,511 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-14 23:38:32,511 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
+2022-10-14 23:38:32,511 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-14 23:38:32,687 - INFO - werkzeug - 127.0.0.1 - - [14/Oct/2022 23:38:32] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-14 23:38:36,659 - DEBUG - pytube.helpers - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2022-10-14 23:38:37,108 - INFO - werkzeug - 127.0.0.1 - - [14/Oct/2022 23:38:37] "[32mPOST /youtube_path HTTP/1.1[0m" 302 -
+2022-10-14 23:38:37,124 - DEBUG - googleapiclient.discovery - URL being requested: GET https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id=UCNU_lfiiWBdtULKOw6X0Dig&key=AIzaSyDngNny8jHygqybN7XXlQtGtR0cefNmGrI&alt=json
+2022-10-14 23:38:37,382 - INFO - root - {'channel_id': 'UCNU_lfiiWBdtULKOw6X0Dig', 'Title': 'Krish Naik', 'playlist_id': 'UUNU_lfiiWBdtULKOw6X0Dig', 'viewCount': 63021132, 'subscriberCount': 666000, 'videoCount': 1508}
+2022-10-14 23:38:37,504 - DEBUG - googleapiclient.discovery - URL being requested: GET https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=UUNU_lfiiWBdtULKOw6X0Dig&maxResults=50&key=AIzaSyDngNny8jHygqybN7XXlQtGtR0cefNmGrI&alt=json
+2022-10-14 23:38:37,905 - INFO - root - video ids are fetched
+2022-10-14 23:38:37,913 - DEBUG - googleapiclient.discovery - URL being requested: GET https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&id=QnDIY-nRHPw%2CKEU-uoI0zRw%2Cwr6Abu-aDsA%2CTd-Qq2xwG64%2Cs-IYcL9iQ3M%2CSvgOCCwsroY%2ClO01XcR-gH0%2CpRbW2G4rVrw%2Cf8AtpzmRzFc%2COK-7VsVVejg%2CHgjax-GPsAw%2C5W9QiJo95Ws%2C94Kba7tAz-0%2CIesLltOZZhY%2CV20ZZt8lVxM%2CIX4QhQlJoDg%2CQZMWr0BOeQA%2CFzwJoHawwwI%2ChCTbdXh9P5I%2C2CRY5BYf-js%2CpZakG-kIt_o%2C4VVhwfVf1k8%2CngBPXUaScCw%2CdPARXQO8dkw%2CtpXu2DnK9HA%2C58RsdQXG0IA%2CCOTMO2sYJh0%2CoUlAJe4Tp8o%2CjLcuVu5xdDo%2C82fPl5l0vXY%2CbDJkMOvhAmc%2CAxALCZMo01Y%2CHZ9MUzCRlzI%2Ch9pB1RaTa2U%2CMJ1vWb1rGwM%2CPp6CO2_YEDE%2C-se8_ESCUTQ%2CqJJEf6p8xH0%2CVC2BL_ChGeg%2CC0KW4MvNbIQ%2CJneXvhlJW_k%2CuXEg8TF-2ZA%2CITyGQpyMV_w%2C8-tyWaOFBPU%2CuwQYAH5MC8c%2C7uLzGRlXXDw%2C9di4_ZJqawU%2CgFwr2KxZ1pc%2Cg9o4_ua2Gv0%2C015vL0cJfA0&key=AIzaSyDngNny8jHygqybN7XXlQtGtR0cefNmGrI&alt=json
+2022-10-14 23:38:38,161 - INFO - root - video datails are fetched
+2022-10-14 23:38:39,994 - DEBUG - pytube.helpers - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2022-10-14 23:38:40,035 - INFO - werkzeug - 127.0.0.1 - - [14/Oct/2022 23:38:40] "[32mGET /channel_summary HTTP/1.1[0m" 302 -
+2022-10-14 23:38:40,402 - INFO - werkzeug - 127.0.0.1 - - [14/Oct/2022 23:38:40] "[32mPOST /youtube_path HTTP/1.1[0m" 302 -
+2022-10-14 23:38:40,443 - DEBUG - googleapiclient.discovery - URL being requested: GET https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id=UCNU_lfiiWBdtULKOw6X0Dig&key=AIzaSyDngNny8jHygqybN7XXlQtGtR0cefNmGrI&alt=json
+2022-10-14 23:38:40,548 - INFO - root - {'channel_id': 'UCNU_lfiiWBdtULKOw6X0Dig', 'Title': 'Krish Naik', 'playlist_id': 'UUNU_lfiiWBdtULKOw6X0Dig', 'viewCount': 63021132, 'subscriberCount': 666000, 'videoCount': 1508}
+2022-10-14 23:38:40,584 - DEBUG - googleapiclient.discovery - URL being requested: GET https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=UUNU_lfiiWBdtULKOw6X0Dig&maxResults=50&key=AIzaSyDngNny8jHygqybN7XXlQtGtR0cefNmGrI&alt=json
+2022-10-14 23:38:40,971 - INFO - root - video ids are fetched
+2022-10-14 23:38:40,980 - DEBUG - googleapiclient.discovery - URL being requested: GET https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&id=QnDIY-nRHPw%2CKEU-uoI0zRw%2Cwr6Abu-aDsA%2CTd-Qq2xwG64%2Cs-IYcL9iQ3M%2CSvgOCCwsroY%2ClO01XcR-gH0%2CpRbW2G4rVrw%2Cf8AtpzmRzFc%2COK-7VsVVejg%2CHgjax-GPsAw%2C5W9QiJo95Ws%2C94Kba7tAz-0%2CIesLltOZZhY%2CV20ZZt8lVxM%2CIX4QhQlJoDg%2CQZMWr0BOeQA%2CFzwJoHawwwI%2ChCTbdXh9P5I%2C2CRY5BYf-js%2CpZakG-kIt_o%2C4VVhwfVf1k8%2CngBPXUaScCw%2CdPARXQO8dkw%2CtpXu2DnK9HA%2C58RsdQXG0IA%2CCOTMO2sYJh0%2CoUlAJe4Tp8o%2CjLcuVu5xdDo%2C82fPl5l0vXY%2CbDJkMOvhAmc%2CAxALCZMo01Y%2CHZ9MUzCRlzI%2Ch9pB1RaTa2U%2CMJ1vWb1rGwM%2CPp6CO2_YEDE%2C-se8_ESCUTQ%2CqJJEf6p8xH0%2CVC2BL_ChGeg%2CC0KW4MvNbIQ%2CJneXvhlJW_k%2CuXEg8TF-2ZA%2CITyGQpyMV_w%2C8-tyWaOFBPU%2CuwQYAH5MC8c%2C7uLzGRlXXDw%2C9di4_ZJqawU%2CgFwr2KxZ1pc%2Cg9o4_ua2Gv0%2C015vL0cJfA0&key=AIzaSyDngNny8jHygqybN7XXlQtGtR0cefNmGrI&alt=json
+2022-10-14 23:38:41,186 - INFO - root - video datails are fetched
+2022-10-14 23:38:43,098 - INFO - werkzeug - 127.0.0.1 - - [14/Oct/2022 23:38:43] "[32mGET /channel_summary HTTP/1.1[0m" 302 -
+2022-10-14 23:38:43,478 - INFO - werkzeug - 127.0.0.1 - - [14/Oct/2022 23:38:43] "GET /list_channel HTTP/1.1" 200 -
+2022-10-14 23:38:43,675 - INFO - werkzeug - 127.0.0.1 - - [14/Oct/2022 23:38:43] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+2022-10-14 23:38:43,862 - INFO - werkzeug - 127.0.0.1 - - [14/Oct/2022 23:38:43] "GET /favicon.ico HTTP/1.1" 200 -

@@ -27,9 +27,9 @@ try:
         "mongodb+srv://navdeep3135:Gate7172@cluster0.lgvqzwx.mongodb.net/?retryWrites=true&w=majority")
     db = client.youtube
 
-    channel_coll = client['channel_table']
-    video_coll = client['video_table']
-    coll = client['youtube data']
+    channel_coll = db['channel_table']
+    video_coll = db['video_table']
+    coll = db['youtube data']
 
 except Exception as e:
     logging.error(e)
