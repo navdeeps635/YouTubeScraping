@@ -140,7 +140,7 @@ def comments(path):
 
         else:
             vid_details = get_video_details('youtube', path)
-            comments = get_comments(youtube, vid_details)
+            comment_table = get_comments(youtube, vid_details)
             img_b64 = save_image(vid_details)
 
             for i in range(len(img_b64)):
