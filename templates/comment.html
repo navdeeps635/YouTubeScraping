@@ -7,13 +7,11 @@
 
 {% block body %}
     <center style="background:linear-gradient(#00796B, #00bb7b)">
-    <img src="https://ineuron.ai/images/ineuron-logo.png" style="width:300px;height:100px;">
     <h1 style="color: white">YOUTUBE ANALYSIS</h1>
-    <p style="color: white">:-BY APOORV JAIN STUDENT OF INEURON </p>
 </center>
 <center>
     <div style="max-width :70%; background : white">
-    <h1>COMMENT ON VIDEO </h1>
+    <h1>COMMENTS ON VIDEO </h1>
     <table>
       <tr>
         <th>
@@ -28,7 +26,7 @@
 
         <tr>
           <td style="padding : 5px;">
-            {{i['author']}}
+            {{i['author_name']}}
           </td>
           <td>
             {{i['comment_text']}}

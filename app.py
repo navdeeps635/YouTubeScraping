@@ -9,6 +9,8 @@ from pytube import YouTube
 import mysql.connector as conn
 import pymongo
 from io import BytesIO
+from dotenv import load_dotenv 
+import os
 
 import logging
 
@@ -18,18 +20,21 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s-%(levelname)s-%(name)s-%(message)s')
 try:
+    load_dotenv()
     api_service_name = "youtube"
     api_version = "v3"
-    api_key = 'AIzaSyDngNny8jHygqybN7XXlQtGtR0cefNmGrI'
+    api = os.getenv('api_key')
+    api_key = f'{api}'
     youtube = build(api_service_name, api_version, developerKey=api_key)
 
+    ini = os.getenv('mongo_pass')
     client = pymongo.MongoClient(
-        "mongodb+srv://navdeep3135:Gate7172@cluster0.lgvqzwx.mongodb.net/?retryWrites=true&w=majority")
+        f"mongodb+srv://navdeep3135:{ini}@cluster0.lgvqzwx.mongodb.net/?retryWrites=true&w=majority")
     db = client.youtube
 
     channel_coll = db['channel_table']
     video_coll = db['video_table']
-    coll = db['youtube data']
+    comm_coll = db['youtube_data']
 
 except Exception as e:
     logging.error(e)
@@ -123,7 +128,7 @@ def catch_all(path):
 
 
 @app.route('/videos/', defaults={'path': ''})
-@app.route('/videos/<path>')
+@app.route('/videos/<path:path>')
 def comments(path):
     '''
     This function is used to fetch all the comments from MYSQL DB
@@ -132,7 +137,7 @@ def comments(path):
     '''
 
     try:
-        a = coll.find()
+        a = comm_coll.find()
 
         for i in a:
             if i['video_id'] == path:
@@ -158,7 +163,7 @@ def comments(path):
 
 
 @app.route('/download/', defaults={'path': ''})
-@app.route('/download/<path>')
+@app.route('/download/<path:path>')
 def download_video(path):
     '''
     this function is used to download the youtube video

@@ -10,13 +10,9 @@
 {% block body %}
     <div style="background:linear-gradient(#00796B, #00bb7b)">
         <table>
-            <tr>
-                <td>
-                    <img src="https://ineuron.ai/images/ineuron-logo.png" style="width:300px;height:100px;" >
-                </td>
+            <tr>                
                 <td><center>
                      <h1 style="color: white">YOUTUBE ANALYSIS</h1>
-                     <p style="color: white">:-BY APOORV JAIN STUDENT OF INEURON </p>
                 </center>
                 </td>
             </tr>
@@ -30,28 +26,28 @@
 
     <tr>
         <td style="padding:10px;">
-            <img src="{{i['img_url']}}" style="width:200px;height:200px;">
+            <img src="{{i['thumbnail']}}" style="width:200px;height:200px;">
         </td>
         <td>
             <table>
                 <tr><td>
                     <a href="videos/{{i['video_id']}}">
-                            {{i['Title']}}
+                            {{i['video_title']}}
                     </a>
                     </td>
                 </tr>
 
                 <tr><td>
-                    views : {{i['Views']}}
+                    views : {{i['viewcount']}}
                 </td>
                 </tr>
 
                 <tr>
-                    <td>Likes : {{i['Likes']}}</td>
+                    <td>Likes : {{i['likecount']}}</td>
                 </tr>
 
                 <tr>
-                    <td>Comments: {{i['comments']}}</td>
+                    <td>Comments: {{i['commentcount']}}</td>
                 </tr>
 
                 <tr><td>

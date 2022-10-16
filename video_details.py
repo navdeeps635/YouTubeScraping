@@ -18,6 +18,7 @@ def get_video_details(youtube, video_id):
         
         for i in range(len(response['items'])):
             video_info = dict(
+            channel_id   = video_id['channel_id'],
             video_title  = response['items'][i]['snippet']['title'],
             thumbnail    = response['items'][i]['snippet']['thumbnails']['high']['url'],
             viewcount    = int(response['items'][i]['statistics']['viewCount']),
