@@ -23,11 +23,11 @@ try:
     load_dotenv()
     api_service_name = "youtube"
     api_version = "v3"
-    api = os.getenv('api_key')
+    api = os.getenv('inr')
     api_key = f'{api}'
     youtube = build(api_service_name, api_version, developerKey=api_key)
 
-    ini = os.getenv('mongo_pass')
+    ini = os.getenv('mgo_pass')
     client = pymongo.MongoClient(
         f"mongodb+srv://navdeep3135:{ini}@cluster0.lgvqzwx.mongodb.net/?retryWrites=true&w=majority")
     db = client.youtube

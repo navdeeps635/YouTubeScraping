@@ -35,9 +35,14 @@ if __name__ == "__main__":
     from channel_summary import get_channel_stats
     from video_id import get_video_ids
     from video_details import get_video_details
+    from dotenv import load_dotenv
+    import os
+
+    load_dotenv()
     api_service_name = "youtube"
     api_version = "v3"
-    api_key = 'AIzaSyDngNny8jHygqybN7XXlQtGtR0cefNmGrI'
+    api = os.getenv('inr')
+    api_key = f'{api}'
     channel_id  = 'UCNU_lfiiWBdtULKOw6X0Dig'
     youtube = build(api_service_name, api_version, developerKey = api_key)
     
