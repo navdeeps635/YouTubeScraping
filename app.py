@@ -154,7 +154,7 @@ def comments(path):
                     'img_base64_encoded': img_b64[i]['img_b64'],
                     'comments_id': comment_table[i]}
 
-                coll.insert_one(data_mongo)
+                comm_coll.insert_one(data_mongo)
                 return redirect(f'/videos/{path}')
         return render_template('base.html')
     except Exception as e:
@@ -193,7 +193,7 @@ def image(path):
     :return: NONE redirect to the /list_channel
     '''
     try:
-        a = coll.find()
+        a = comm_coll.find()
 
         for i in a:
             if i['video_id'] == path:
