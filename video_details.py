@@ -1,6 +1,6 @@
 import logging
 
-logging.basicConfig(filename = 'scrapper.log', filemode = 'w', level = logging.DEBUG, format = '%(asctime)s - %(levelname)s - %(name)s - %(message)s')
+logging.basicConfig(filename = 'scrapper.log', filemode = 'w', level = logging.INFO, format = '%(asctime)s - %(levelname)s - %(name)s - %(message)s')
 
 def get_video_details(youtube, video_id):
     '''
@@ -29,7 +29,40 @@ def get_video_details(youtube, video_id):
 
             video_data.append(video_info)
 
-        logging.info('video datails are fetched')
+        logging.info(video_data)
+        return video_data   
+
+    except Exception as e:
+        logging.error('An error has occured',e)
+
+
+def get_vid_details(youtube, video_id):
+    '''
+    This funtion will return the information about each video the channel such as video_title, views, likes and comments etc.
+    :params you tube: <googleapiclient.discovery.Resource at 0x1601bd94b50>
+    :param video_id : <dict> of <list> it contains all the video Id from a channel
+    :return: information about each video of specific video_id
+    '''
+    try:
+
+        video_data = []
+        request = youtube.videos().list(part = 'snippet,statistics', id = video_id)
+
+        response = request.execute()
+        
+        for i in range(len(response['items'])):
+            video_info = dict(
+            video_title  = response['items'][i]['snippet']['title'],
+            thumbnail    = response['items'][i]['snippet']['thumbnails']['high']['url'],
+            viewcount    = int(response['items'][i]['statistics']['viewCount']),
+            likecount    = int(response['items'][i]['statistics']['likeCount']),
+            commentcount = int(response['items'][i]['statistics']['commentCount']),
+            video_link   = 'https://www.youtube.com/watch?v=' + response['items'][i]['id'],
+            video_id     = response['items'][i]['id'])
+
+            video_data.append(video_info)
+
+        logging.info(video_data)
         return video_data   
 
     except Exception as e:
@@ -53,5 +86,4 @@ if __name__ == '__main__':
     video_id = get_video_ids(youtube,channel_summary)
     #video_ids = ['Td-Qq2xwG64','OK-7VsVVej','Hgjax-GPsA','5W9QiJo95Ws']
 
-    get_video_details(youtube,video_id)
-
+    get_vid_details(youtube,'bDJkMOvhAmc')

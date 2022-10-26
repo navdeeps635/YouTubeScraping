@@ -1,67 +1,58 @@
-2022-10-16 17:41:25,974 - INFO - googleapiclient.discovery_cache - file_cache is only supported with oauth2client<4.0.0
-2022-10-16 17:41:26,119 - WARNING - werkzeug -  * Debugger is active!
-2022-10-16 17:41:26,119 - INFO - werkzeug -  * Debugger PIN: 524-457-290
-2022-10-16 17:41:26,186 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-16 17:41:26,186 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-16 17:41:26,186 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-16 17:41:26,186 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-16 17:41:26,186 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-16 17:41:26,186 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-16 17:41:26,186 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-16 17:41:26,186 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-16 17:41:26,186 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-16 17:41:26,197 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
-2022-10-16 17:41:26,197 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
-2022-10-16 17:41:26,201 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
-2022-10-16 17:41:26,213 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
-2022-10-16 17:41:26,213 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
-2022-10-16 17:41:26,217 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
-2022-10-16 17:41:26,219 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
-2022-10-16 17:41:26,219 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
-2022-10-16 17:41:26,219 - DEBUG - pymongo.ocsp_support - Verifying response
-2022-10-16 17:41:26,219 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
-2022-10-16 17:41:26,219 - DEBUG - pymongo.ocsp_support - Verifying response
-2022-10-16 17:41:26,219 - DEBUG - pymongo.ocsp_support - Verifying response
-2022-10-16 17:41:26,219 - DEBUG - pymongo.ocsp_support - Responder is issuer
-2022-10-16 17:41:26,219 - DEBUG - pymongo.ocsp_support - Responder is issuer
-2022-10-16 17:41:26,219 - INFO - werkzeug -  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
-2022-10-16 17:41:26,219 - DEBUG - pymongo.ocsp_support - Responder is issuer
-2022-10-16 17:41:26,228 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
-2022-10-16 17:41:26,228 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
-2022-10-16 17:41:26,228 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
-2022-10-16 17:41:26,228 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-16 17:41:26,228 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-16 17:41:26,228 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-16 17:41:26,337 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-16 17:41:26,337 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-16 17:41:26,337 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-16 17:41:26,337 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
-2022-10-16 17:41:26,337 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-16 17:41:26,337 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-16 17:41:26,337 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-16 17:41:26,337 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-16 17:41:26,337 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
-2022-10-16 17:41:26,337 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-16 17:41:26,354 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-16 17:41:26,354 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-16 17:41:26,354 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-16 17:41:26,354 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
-2022-10-16 17:41:26,354 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-16 17:41:30,391 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:30] "GET / HTTP/1.1" 200 -
-2022-10-16 17:41:30,440 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:30] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
-2022-10-16 17:41:30,657 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
-2022-10-16 17:41:30,657 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
-2022-10-16 17:41:30,657 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
-2022-10-16 17:41:30,657 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
-2022-10-16 17:41:30,657 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
-2022-10-16 17:41:30,984 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:30] "GET /favicon.ico HTTP/1.1" 200 -
-2022-10-16 17:41:32,606 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:32] "GET /list_channel HTTP/1.1" 200 -
-2022-10-16 17:41:32,665 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:32] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
-2022-10-16 17:41:32,855 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:32] "GET /favicon.ico HTTP/1.1" 200 -
-2022-10-16 17:41:34,544 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:34] "GET /UCuzS3rPQAYqHcLWqOFuY0pw HTTP/1.1" 200 -
-2022-10-16 17:41:34,585 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:34] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
-2022-10-16 17:41:35,053 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:35] "GET /favicon.ico HTTP/1.1" 200 -
-2022-10-16 17:41:36,423 - ERROR - root - 'NoneType' object is not iterable
-2022-10-16 17:41:36,431 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:36] "GET /videos/Yy6CbyPOB6Q HTTP/1.1" 200 -
-2022-10-16 17:41:36,456 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:36] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
-2022-10-16 17:41:36,578 - INFO - werkzeug - 127.0.0.1 - - [16/Oct/2022 17:41:36] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-26 17:19:22,171 - INFO - googleapiclient.discovery_cache - file_cache is only supported with oauth2client<4.0.0
+2022-10-26 17:19:22,625 - WARNING - werkzeug -  * Debugger is active!
+2022-10-26 17:19:22,625 - INFO - werkzeug -  * Debugger PIN: 184-918-917
+2022-10-26 17:19:22,868 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-26 17:19:22,868 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-26 17:19:22,868 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-26 17:19:22,876 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
+2022-10-26 17:19:22,989 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-26 17:19:22,989 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-26 17:19:22,989 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-26 17:19:22,998 - DEBUG - urllib3.connectionpool - Starting new HTTP connection (1): r3.o.lencr.org:80
+2022-10-26 17:19:22,998 - INFO - werkzeug -  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+2022-10-26 17:19:23,046 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2022-10-26 17:19:23,046 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2022-10-26 17:19:23,046 - DEBUG - pymongo.ocsp_support - Verifying response
+2022-10-26 17:19:23,046 - DEBUG - pymongo.ocsp_support - Responder is issuer
+2022-10-26 17:19:23,046 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
+2022-10-26 17:19:23,046 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-26 17:19:23,046 - DEBUG - urllib3.connectionpool - http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2022-10-26 17:19:23,046 - DEBUG - pymongo.ocsp_support - OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2022-10-26 17:19:23,046 - DEBUG - pymongo.ocsp_support - Verifying response
+2022-10-26 17:19:23,062 - DEBUG - pymongo.ocsp_support - Responder is issuer
+2022-10-26 17:19:23,062 - DEBUG - pymongo.ocsp_support - Caching OCSP response.
+2022-10-26 17:19:23,062 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-26 17:19:23,103 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-26 17:19:23,103 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-26 17:19:23,103 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-26 17:19:23,103 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
+2022-10-26 17:19:23,103 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-26 17:19:23,207 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-26 17:19:23,207 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-26 17:19:23,207 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-26 17:19:23,207 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
+2022-10-26 17:19:23,207 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-26 17:19:23,223 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-26 17:19:23,223 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-26 17:19:23,223 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-26 17:19:23,223 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
+2022-10-26 17:19:23,239 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-26 17:19:23,271 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-26 17:19:23,287 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-26 17:19:23,287 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-26 17:19:23,287 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
+2022-10-26 17:19:23,287 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-26 17:22:57,159 - INFO - werkzeug - 127.0.0.1 - - [26/Oct/2022 17:22:57] "GET / HTTP/1.1" 200 -
+2022-10-26 17:22:57,191 - INFO - werkzeug - 127.0.0.1 - - [26/Oct/2022 17:22:57] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+2022-10-26 17:22:57,579 - DEBUG - pymongo.ocsp_support - Peer did not staple an OCSP response
+2022-10-26 17:22:57,579 - DEBUG - pymongo.ocsp_support - Requesting OCSP data
+2022-10-26 17:22:57,579 - DEBUG - pymongo.ocsp_support - Trying http://r3.o.lencr.org
+2022-10-26 17:22:57,579 - DEBUG - pymongo.ocsp_support - Using cached OCSP response.
+2022-10-26 17:22:57,579 - DEBUG - pymongo.ocsp_support - OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2022-10-26 17:22:57,726 - INFO - werkzeug - 127.0.0.1 - - [26/Oct/2022 17:22:57] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-26 17:22:58,972 - INFO - werkzeug - 127.0.0.1 - - [26/Oct/2022 17:22:58] "GET /list_channel HTTP/1.1" 200 -
+2022-10-26 17:22:58,997 - INFO - werkzeug - 127.0.0.1 - - [26/Oct/2022 17:22:58] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+2022-10-26 17:22:59,071 - INFO - werkzeug - 127.0.0.1 - - [26/Oct/2022 17:22:59] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-26 17:23:20,127 - INFO - werkzeug - 127.0.0.1 - - [26/Oct/2022 17:23:20] "GET /UCNU_lfiiWBdtULKOw6X0Dig HTTP/1.1" 200 -
+2022-10-26 17:23:20,167 - INFO - werkzeug - 127.0.0.1 - - [26/Oct/2022 17:23:20] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+2022-10-26 17:23:20,529 - INFO - werkzeug - 127.0.0.1 - - [26/Oct/2022 17:23:20] "GET /favicon.ico HTTP/1.1" 200 -

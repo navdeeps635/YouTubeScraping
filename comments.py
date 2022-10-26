@@ -2,7 +2,7 @@ import logging
 
 logging.basicConfig(filename = 'scrapper.log',
                     filemode = 'w',
-                    level = logging.DEBUG,
+                    level = logging.INFO,
                     format = '%(asctime)s - %(levelname)s - %(name)s - %(message)s')
 
 def get_comments(youtube,video_details):
@@ -15,21 +15,20 @@ def get_comments(youtube,video_details):
         response = request.execute()
 
         comment_table = []
-
+        comment = []
         for item in response['items']:
                 comments = dict(
                 Comment_text = item['snippet']['topLevelComment']['snippet']['textDisplay'],
                 author_name = item['snippet']['topLevelComment']['snippet']['authorDisplayName'])
                         
-                #comments.append(comment)
-                #else:
-                    #comments = []
-                comment_table.append(comments)
+                comment.append(comments)
         
-        comments = dict(video_id = id['video_id'],
-                        comments =  comment_table)
-    logging.info('Comments are fetched')
-    return comments
+        comm = dict(video_id = id['video_id'],
+                        comments =  comment)
+        
+        comment_table.append(comm)
+    logging.info(comment_table)
+    return comment_table
 if __name__ == "__main__":
     from googleapiclient.discovery import build
     from channel_summary import get_channel_stats

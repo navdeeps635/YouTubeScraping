@@ -5,7 +5,7 @@ import logging
 logging.basicConfig(
     filename = 'scrapper.log',
     filemode = 'w',
-    level = logging.DEBUG,
+    level = logging.INFO,
     format = '%(asctime)s - %(levelname)s - %(name)s - %(message)s')
 
 def save_image(video_details):
@@ -22,7 +22,7 @@ def save_image(video_details):
                     img_b64 = base64.b64encode(r),
                     video_id = i['video_id'])
             img_b64s.append(image)
-        logging.info("The images are been changed to base64")
+        logging.info(img_b64s)
         return img_b64s
     except Exception as e:
         logging.error(f"An error occurred {e}")

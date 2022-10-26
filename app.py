@@ -4,6 +4,7 @@ from channel_summary import get_channel_stats
 from save_thumbnail import save_image
 from video_id import get_video_ids
 from video_details import get_video_details
+from video_details import get_vid_details
 from comments import get_comments
 from pytube import YouTube
 import mysql.connector as conn
@@ -34,7 +35,7 @@ try:
 
     channel_coll = db['channel_table']
     video_coll = db['video_table']
-    comm_coll = db['youtube_data']
+    comm_coll = db['comments_data']
 
 except Exception as e:
     logging.error(e)
@@ -86,9 +87,11 @@ def channel_summary():
         channel_coll.insert_one(channel_summary)
         video_ids = get_video_ids(youtube, channel_summary)
         video_details = get_video_details(youtube, video_ids)
+        comment_table = get_comments(youtube,video_details)
 
         for i in video_details:
             video_coll.insert_one(i)
+        
         return redirect('/list_channel')
     except Exception as e:
         logging.error(e)
@@ -131,7 +134,7 @@ def catch_all(path):
 @app.route('/videos/<path:path>')
 def comments(path):
     '''
-    This function is used to fetch all the comments from MYSQL DB
+    This function is used to fetch all the comments from MongoDB
     :param path: video_id
     :return: video_html
     '''
@@ -141,10 +144,11 @@ def comments(path):
 
         for i in a:
             if i['video_id'] == path:
+
                 return render_template('comment.html', var=i['comments_id']['comments'])
 
         else:
-            vid_details = get_video_details('youtube', path)
+            vid_details = get_vid_details(youtube, path)
             comment_table = get_comments(youtube, vid_details)
             img_b64 = save_image(vid_details)
 
@@ -202,7 +206,6 @@ def image(path):
     except Exception as e:
         logging.error(e)
         return render_template('error.html')
-
 
 if __name__ == '__main__':
     app.run(debug=True,port = 5001)
